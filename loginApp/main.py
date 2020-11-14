@@ -11,7 +11,7 @@ def index():
 
 @app.route('/login', methods=['POST'])
 def login_check():
-    # Preset valid user name and password
+    # Preset valid username and password
     user = "admin"
     pwd = "admin"
 
@@ -22,9 +22,9 @@ def login_check():
     if(user == data["userInput"] and pwd == data["pwdInput"]):  # Match
         return jsonify({"status": "success", "message": "success login"})
     elif(data["userInput"] == "" or data["pwdInput"] == ""):  # Empty
-        return jsonify({"status": "empty", "message": "user name or(and) password is(are) empty"})
+        return jsonify({"status": "empty", "message": "username or(and) password is(are) empty"})
     else:  # Mismatch
-        return jsonify({"status": "error", "message": "user name or(and) password is(are) incorrect"})
+        return jsonify({"status": "error", "message": "username or(and) password is(are) incorrect"})
 
 
 if __name__ == '__main__':
