@@ -43,8 +43,9 @@ or if you have pytest installed
 ```
 $ pytest
 ```
-The UI test
+The UI test in different cases
 ```
 $ robot loginApp/tests/valid_login.robot
 $ robot loginApp/tests/invalid_login.robot
+$ robot loginApp/tests/empty_login.robot
 ```
