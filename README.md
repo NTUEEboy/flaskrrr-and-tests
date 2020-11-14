@@ -6,7 +6,7 @@ No one likes looooong README, so let's begin:
 python 3.9.0  
 Flask 1.1.2  
 Robot Framework 3.2.2 (Python 3.9.0 on darwin)  
-### Preparation
+### Setup
 ```
 git clone https://github.com/NTUEEboy/flaskrrr-and-tests.git
 ```
