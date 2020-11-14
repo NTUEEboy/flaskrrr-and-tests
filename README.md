@@ -29,6 +29,7 @@ Make sure you have your [ChromeDriver](https://chromedriver.chromium.org/) and m
 $ export PATH=$PATH:path/to/ChromeDriver/
 ```
 ### How to run
+Check Internet is connected in your side because Bootstrap and jQuert CND are used.  
 Start the web server in localhost
 ```
 $ export FLASK_APP=loginApp/main.py
