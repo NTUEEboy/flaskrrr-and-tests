@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+<!-- title -->
+{% block title%}Login{% endblock title%}
+
+{% block content%}
+<!-- begin-of-login-form -->
+<div class="row justify-content-center m-4">
+    <div class="w-50">
+        <div class="form-group">
+            <label for="user">User Name</label>
+            <input type="text" class="form-control" id="user">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password</label>
+            <input type="password" class="form-control" id="pwd">
+        </div>
+        <button type="submit" class="btn btn-dark login-btn" id="login-btn">Login</button>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <h6 class="login-status"></h6>
+</div>
+<!-- end-of-login-form -->
+
+<script src="{{ url_for('static', filename='login.js') }}"></script>
+
+
+{% endblock content%}
