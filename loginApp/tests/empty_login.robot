@@ -6,9 +6,7 @@ Documentation     A test suite with a single test for empty input.
 Resource          resource.robot
 
 *** Test Cases ***
-InvalidLoginTest
+EmptyLoginTest
     Open Browser To Login Page
-    Input Text    id=user    ${EMPTY USER}
-    Input Text    id=pwd    ${EMPTY PASSWORD}
     Click Button    id=login-btn
     Log    Test completed
