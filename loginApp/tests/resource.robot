@@ -13,6 +13,8 @@ ${VALID USER}     admin
 ${VALID PASSWORD}    admin
 ${INVALID USER}     ming
 ${INVALID PASSWORD}    ming
+${EMPTY USER}    
+${EMPTY PASSWORD}    
 ${LOGIN URL}      http://127.0.0.1:5000/
 
 *** Keywords ***
