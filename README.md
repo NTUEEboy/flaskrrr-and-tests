@@ -40,7 +40,7 @@ The unit test for login system in each case
 ```
 $ python -m unittest -v loginApp/tests/test_basic.py
 ```
-or if you have pytest installed
+or if you have `pytest` installed
 ```
 $ pytest
 ```
