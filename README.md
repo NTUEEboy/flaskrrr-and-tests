@@ -30,12 +30,13 @@ $ export PATH=$PATH:path/to/ChromeDriver/
 ```
 ### How to run
 Check Internet is connected in your side because Bootstrap and jQuert CND are used.  
-Start the web server in localhost
+The test scripts are in the [tests](https://github.com/NTUEEboy/flaskrrr-and-tests/tree/master/loginApp/tests) direectory.  
+Start the localhost web server
 ```
 $ export FLASK_APP=loginApp/main.py
 $ flask run
 ```
-The unit test for login system in each cases
+The unit test for login system in each case
 ```
 $ python -m unittest -v loginApp/tests/test_basic.py
 ```
