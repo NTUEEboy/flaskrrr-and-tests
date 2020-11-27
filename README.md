@@ -46,7 +46,7 @@ $ pytest
 ```
 The UI test in different cases
 ```
-$ robot loginApp/tests/valid_login.robot
-$ robot loginApp/tests/invalid_login.robot
-$ robot loginApp/tests/empty_login.robot
+$ robot loginApp/tests/ui_tests/valid_login.robot
+$ robot loginApp/tests/ui_tests/invalid_login.robot
+$ robot loginApp/tests/ui_tests/empty_login.robot
 ```
