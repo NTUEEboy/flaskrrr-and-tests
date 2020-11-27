@@ -11,4 +11,5 @@ InvalidLoginTest
     Input Text    id=user    ${INVALID USER}
     Input Text    id=pwd    ${INVALID PASSWORD}
     Click Button    id=login-btn
+    Check Response Message If Equals    username or(and) password is(are) incorrect
     Log    Test completed

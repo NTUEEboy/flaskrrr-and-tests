@@ -9,4 +9,5 @@ Resource          resource.robot
 EmptyLoginTest
     Open Browser To Login Page
     Click Button    id=login-btn
+    Check Response Message If Equals    username or(and) password is(are) empty
     Log    Test completed

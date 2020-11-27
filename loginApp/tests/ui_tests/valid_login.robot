@@ -11,4 +11,5 @@ ValidLoginTest
     Input Text    id=user    ${VALID USER}
     Input Text    id=pwd    ${VALID PASSWORD}
     Click Button    id=login-btn
+    Check Response Message If Equals    success login
     Log    Test completed
