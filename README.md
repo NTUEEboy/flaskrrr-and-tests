@@ -1,5 +1,5 @@
 # flaskrrr-and-tests
-login example for interview only
+Web login system and API/UI tests
 ## QuickStart
 No one likes looooong README, so let's begin:
 ### Version
