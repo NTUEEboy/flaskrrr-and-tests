@@ -28,7 +28,7 @@ Check Internet is connected in your side because Bootstrap and jQuert CND are us
 The test scripts are in the [tests](https://github.com/NTUEEboy/flaskrrr-and-tests/tree/master/loginApp/tests) direectory.  
 Start the localhost web server
 ```
-$ export FLASK_APP=loginApp/main.py
+$ export FLASK_APP=main.py
 $ flask run
 ```
 The api test for the login function
