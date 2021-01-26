@@ -14,20 +14,15 @@ Just follow the tutorial of [Flask website](https://flask.palletsprojects.com/en
 ```
 $ python -m venv venv
 ```
-Activate the environment and install Flask
+Activate the environment
 ```
 $ . venv/bin/activate
-$ pip install Flask
 ```
-Install [Robot Framework](https://robotframework.org/) for automated UI test
+Install required packages: Flask and [Robot Framework](https://robotframework.org/).
 ```
-$ pip install robotframework
-$ pip install --upgrade robotframework-seleniumlibrary
+$ pip install -r requirements.txt
 ```
-Make sure you have your [ChromeDriver](https://chromedriver.chromium.org/) and make it executable
-```
-$ export PATH=$PATH:path/to/ChromeDriver/
-```
+Make sure you have the same chrome version with [ChromeDriver](https://chromedriver.chromium.org/)(88) in this [repository](https://github.com/NTUEEboy/flaskrrr-and-tests/blob/master/chromedriver_binary/chromedriver). 
 ### How to run
 Check Internet is connected in your side because Bootstrap and jQuert CND are used.  
 The test scripts are in the [tests](https://github.com/NTUEEboy/flaskrrr-and-tests/tree/master/loginApp/tests) direectory.  
@@ -36,9 +31,9 @@ Start the localhost web server
 $ export FLASK_APP=loginApp/main.py
 $ flask run
 ```
-The unit test for login system in each case
+The api test for the login function
 ```
-$ python -m unittest -v loginApp/tests/test_basic.py
+$ python -m unittest -v tests/test_basic.py
 ```
 or if you have `pytest` installed
 ```
@@ -46,7 +41,5 @@ $ pytest
 ```
 The UI test in different cases
 ```
-$ robot loginApp/tests/ui_tests/valid_login.robot
-$ robot loginApp/tests/ui_tests/invalid_login.robot
-$ robot loginApp/tests/ui_tests/empty_login.robot
+$ robot tests/ui_tests/login.robot
 ```
